@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --fonte-titulos: "Castoro Titling", serif;
+    --fonte-textos:"Khand", sans-serif;
+    --azul-claro: #110273;
+    --azul-escuro: #020659;
+    --amarelo:#FFE501;
+    --vermelho: #EC0000;
+    --verde: #294B2B;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: var(--fonte-titulos);
+}
+
+h2, h3,h4, p,nav{
+    font-family: var(--fonte-textos);
+}
+
+header{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    
+
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7; 
+    
+}
+
+h1{
+    position: absolute;
+    bottom: 25%;
+    width: 100%;
+    font-size: 4rem;
+    margin: 0;
+    color:white ;
+    text-shadow: 2px 2px black;
+    text-align: center;
+
+}
+
+nav{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+
+}
+nav > a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: 0 15px;
+    margin: 0;
+    border-radius: 15px;
+    line-height: 50px;
+}
+
+nav > a:hover{
+    transition-delay: 0.2s;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+
+}
+
+
+body{
+    width: 100%;
+}
+
+main{
+    width: 95%;
+    margin: auto;
+    padding:30px 0px;
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+}
+
+section{
+    margin: 0 50px;
+}
+
+h2{
+    color: #110273;
+    background-image:linear-gradient(to right, white, red,  var(--vermelho),red, white);
+    padding: 10px;
+    text-align: center;
+    font-size: 2rem;
+    margin: 25px 0;
+}
+
+h3{
+    color: var(--azul-claro);
+    margin: 15px 0px;
+    font-size: 1.8rem;
+    
+}
+
+#img-elenco-1911{
+    display: block;
+    width: 500px;
+    margin: auto;
+}
+
+.legendas{
+    font-size: 0.8rem;
+    margin: 10px 0;
+    padding: 0px 0px 10px 0px;
+    text-align: center;
+    
+}
+p{
+    margin: 15px 0;
+    width: 90%;
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    text-indent: 30px;
+    color: black;
+}
+
+#idolos{
+    text-align: center;
+    background-color:var(--verde);
+    color: white;
+
+}
+
+.coluna-idolos{
+    display: inline-block;
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.74);
+    height: auto;
+    width: 30%;
+    margin: 0 1%;
+    vertical-align: top;
+    text-align: left;
+    box-sizing: border-box;
+    overflow: hidden;
+
+
+}
+
+.coluna-idolos > img{
+    width: 100%;
+    height: 225px;
+}
+
+.coluna-idolos > ul{
+    list-style-type: disc;
+    padding: 10px 20px;
+
+}
+
+.coluna-idolos > ul > li{
+    margin: 10px 0px;
+}
+
+h4{
+    margin: 10px 0;
+    text-align: center;
+}
+
+
+
+.legenda-jogador-clube{
+    color: white;
+    font-size: 0.6rem;
+    text-align: center;
+    margin: 15px;
+    padding: 10px;
+    
+}
+
+.subtitulo-idolos{
+    color:silver;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: start;
+    margin: 0px 10px;
+    padding-top: 10px;
+}
+
+footer {
+    text-align: center; 
+    background-color: black;
+    
+    font-size: 1rem;
+}
+
+footer > p{
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+footer > p > a{
+    text-decoration: none;
+    color: white;
+}
+
+footer > p > a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.container-estadio{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.container-estadio > h3{
+    margin: 20px;
+
+}
+
+.foto-estadio{
+    width: 750px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.lista-titulos{
+    font-family: var(--fonte-textos);    
+    list-style-position: inside;
+    
+
+}
+
+main > section > h3{
+    text-shadow: 1px 1px #110273;
+    text-align: center;
+}
+
+#conteudo-trofeus{
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    
+}
+
+#conteudo-trofeus > section{
+    background-color: lightgray;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.365);
+    margin: 30px;
+    width: 350px;
+    text-align: center;
+    padding: 25px;
+
+}
+
+.trofeu{
+    width: 170px;
+    margin: 35px 0px;
+}
+
+#container-jogadores{
+    background-color:black;
+    width: 1638px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-jogadores > img{
+    width: 250px;
+    margin: 5px;
+    background-color: lightgrey;
+
+    
+}
+
+#elenco-atual-titulo{
+    color: white;
+}
+.jogador {
+    position: relative;
+    width: 220px; 
+    margin: 40px 20px;
+    border: 1px solid gray;
+}
+
+.jogador img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.nome-jogador {
+    
+    position: absolute;
+    width: 210px;
+    height: 20%;
+    margin: auto;
+    background-color:#cd8d00; /* Fundo semi-transparente */
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 28px;
+    font-weight: bolder;
+    font-family: var(--fonte-textos);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.jogador:hover .nome-jogador {
+    opacity: 1;
+    
+}
+
+.jogador:hover{
+    cursor: pointer;
+}
+
+#elenco-atual-titulo {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 20px;
+    color: white 
+}
